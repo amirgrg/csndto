@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Csn.Public.Dto.Misc;
+using Csn.Public.Dto.Vehicle;
 
-namespace Csn.Public.Dto.Vehicle
+namespace csn.dto.vehicle.Models.Vehicle
 {
     public class Vehicle
     {

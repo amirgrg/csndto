@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Csn.Public.Dto.Misc;
 
 namespace Csn.Public.Dto.Vehicle
 {
     public class VehicleSeller
     {
+        [Required]
         public Guid Identifier { get; set; }
         public string Type { get; set; }
 

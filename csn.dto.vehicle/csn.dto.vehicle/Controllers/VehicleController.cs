@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Net;
+using csn.dto.vehicle.Models.Vehicle;
 using csn.dto.vehicle.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,16 +29,33 @@ namespace csn.dto.vehicle.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Get(Guid id)
         {
-            //_repo.Add();
+            _repo.ListIdData(id);
             return "value";
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [Route("PostVehicle")]
+        public ContentResult Post([FromBody]Vehicle data)
         {
+            if (data == null)
+            {
+                return new ContentResult
+                {
+                    StatusCode = (int)HttpStatusCode.BadRequest,
+                    ContentType = Request.ContentType,
+                    Content = "Empty data is not cool"
+                };
+            }
+           var result = _repo.Save(data);
+            return new ContentResult
+            {
+                Content = result.ToString(),
+                StatusCode = (int)HttpStatusCode.OK,
+                ContentType = Request.ContentType
+            };
         }
 
         // PUT api/values/5

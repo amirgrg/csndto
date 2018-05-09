@@ -26,22 +26,18 @@ namespace csn.dto.vehicle
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", false, true)
-                .AddEnvironmentVariables()
-                .Build();
+            //var configuration = new ConfigurationBuilder()
+            //    .AddJsonFile("appsettings.json", false, true)
+            //    .AddEnvironmentVariables()
+            //    .Build();
 
             services.AddMvc();
-
-
-
-            services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionStrings"));
-
+            services.Configure<ConnectionStrings>(Configuration.GetSection("ConnectionString"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
-
+            IoC.BindingModule.Bind(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,12 +50,13 @@ namespace csn.dto.vehicle
 
             app.UseMvc();
             app.UseSwagger();
-
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 
             });
+
+           
 
         }
     }

@@ -8,7 +8,9 @@
         /// <summary>
         /// Inert vehicle with generated guid
         /// </summary>
-        public static string InsertVehicleCommand = @"Insert into CsnDto (IdentifierID,SellerID,data)
-                                                      Values (@Identifier,@Seller,@data)";
+        public static string InsertVehicleNewGuidCommand = @"Insert into CsnDtoVehicle (IdentifierID,SellerID,data)
+                                                      Values (@vehicleGuid,@sellerId,@data)";
+        public static string InsertVehicleCommand = @"Insert into CsnDtoVehicle (IdentifierID,SellerID,data)
+                                                      Values (@Identifier,@sellerId,@data)";
     }
 }
