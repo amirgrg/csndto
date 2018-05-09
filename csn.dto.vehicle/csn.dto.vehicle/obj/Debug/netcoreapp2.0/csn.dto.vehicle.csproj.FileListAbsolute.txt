@@ -1,0 +1,12 @@
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.csproj.CoreCompileInputs.cache
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.AssemblyInfoInputs.cache
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.AssemblyInfo.cs
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.xml
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.deps.json
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.runtimeconfig.json
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.runtimeconfig.dev.json
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.dll
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\bin\Debug\netcoreapp2.0\csn.dto.vehicle.pdb
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.dll
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.pdb
+C:\Users\amir.gurung\source\repos\Csn.Dto.Vehicle\csn.dto.vehicle\obj\Debug\netcoreapp2.0\csn.dto.vehicle.csprojResolveAssemblyReference.cache

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>csn.dto.vehicle</name>
+    </assembly>
+    <members>
+        <member name="T:csn.dto.vehicle.Controllers.VehicleController">
+            <inheritdoc />
+        </member>
+        <member name="M:csn.dto.vehicle.Controllers.VehicleController.#ctor(csn.dto.vehicle.Repository.IVehicleRepository)">
+            <inheritdoc />
+        </member>
+        <member name="T:csn.dto.vehicle.IoC.BindingModule">
+            <summary>
+            THis is to hide all the dependency registrations from the startup class
+            </summary>
+        </member>
+        <member name="M:csn.dto.vehicle.IoC.BindingModule.Bind(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:csn.dto.vehicle.Repository.IVehicleRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:csn.dto.vehicle.Repository.IVehicleRepository.Add(Csn.Public.Dto.Vehicle.Vehicle)">
+            <summary>
+            Add a csndto based vehicle to db
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:csn.dto.vehicle.Repository.VehicleRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:csn.dto.vehicle.Repository.VehicleRepository.#ctor(csn.dto.vehicle.Settings.ISettings)">
+            <summary>
+            
+            </summary>
+            <param name="settings"></param>
+        </member>
+    </members>
+</doc>
